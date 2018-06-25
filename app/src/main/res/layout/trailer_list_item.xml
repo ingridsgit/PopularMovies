@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="@dimen/arrow"
+        android:layout_height="@dimen/arrow"
+        android:layout_margin="@dimen/arrow_margin"
+        android:background="@drawable/ic_play_arrow_black_24dp" />
+
+    <TextView
+        android:id="@+id/trailer_view"
+        android:layout_width="@dimen/trailer"
+        android:layout_height="wrap_content"
+        android:background="@drawable/trailer_selector"
+        android:padding="@dimen/small_padding" />
+
+
+</LinearLayout>

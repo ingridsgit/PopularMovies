@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/detail_background"
+    android:id="@+id/scrollingView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.example.android.popularmovies.DetailActivity">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/detail_header"
+            android:background="@color/title_background"
+            android:elevation="@dimen/elevation">
+
+            <TextView
+                android:id="@+id/title_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/padding"
+                android:layout_marginStart="@dimen/padding"
+                android:layout_marginRight="@dimen/star_with_margin"
+                android:layout_marginEnd="@dimen/star_with_margin"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/headline"
+                android:textStyle="bold"
+                tools:text="Title" />
+
+            <View
+                android:id="@+id/star"
+                android:layout_width="@dimen/star"
+                android:layout_height="@dimen/star"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/padding"
+                android:background="@drawable/star_selector"
+                android:gravity="center_vertical" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/poster"
+                android:layout_width="@dimen/poster_width"
+                android:layout_height="@dimen/poster_height"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="@dimen/padding"
+                android:paddingStart="@dimen/padding"
+                android:paddingTop="@dimen/padding"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/movie_poster"/>
+
+
+            <TextView
+                android:id="@+id/release_date"
+                style="@style/headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@id/poster"
+                android:layout_toRightOf="@id/poster"
+                android:textStyle="bold"
+                tools:text="Release date" />
+
+            <TextView
+                android:id="@+id/vote"
+                style="@style/headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/release_date"
+                android:layout_toEndOf="@id/poster"
+                android:layout_toRightOf="@id/poster"
+                android:paddingBottom="@dimen/padding"
+                tools:text="Vote" />
+
+            <Button
+                android:id="@+id/reviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/release_date"
+                android:layout_toEndOf="@id/vote"
+                android:layout_toRightOf="@id/vote"
+                android:text="@string/reviews" />
+
+            <TextView
+                android:id="@+id/overview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/poster"
+                android:padding="@dimen/padding"
+                android:textSize="@dimen/text_regular"
+                tools:text="Overview" />
+
+            <ListView
+                android:id="@+id/trailer_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/overview"
+                android:layout_below="@id/vote"
+                android:layout_toEndOf="@id/poster"
+                android:layout_toRightOf="@id/poster" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    >
+    <dimen name="preview_height">300dp</dimen>
+    <dimen name="padding">16dp</dimen>
+    <dimen name="small_padding">8dp</dimen>
+    <dimen name="poster_height">300dp</dimen>
+    <dimen name="poster_width">200dp</dimen>
+    <dimen name="grid_column_width">200dp</dimen>
+    <dimen name="headline">26sp</dimen>
+    <dimen name="text_regular">20sp</dimen>
+    <dimen name="detail_header">90dp</dimen>
+    <dimen name="star_with_margin">80dp</dimen>
+    <dimen name="elevation">5dp</dimen>
+
+    <dimen name="star">48dp</dimen>
+    <dimen name="arrow">24dp</dimen>
+    <dimen name="arrow_margin">6dp</dimen>
+    <dimen name="trailer">100dp</dimen>
+</resources>

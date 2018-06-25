@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">PopularMovies</string>
+
+    <string name="best_rated">Best rated</string>
+    <string name="most_popular">Most popular</string>
+    <string name="favorites">Favorites</string>
+
+    <string name="reviews">Reviews</string>
+    <string name="trailer">Trailer</string>
+
+    <string name="url_error">The requested URL is invalid</string>
+    <string name="no_movie">There is no movie to display</string>
+    <string name="no_reviews">There is no review yet</string>
+    <string name="no_internet">No internet connection</string>
+
+    <string name="movie_poster">Movie poster</string>
+
+</resources>
