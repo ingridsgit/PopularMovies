@@ -21,7 +21,7 @@ import java.util.ArrayList;
 final class DataQuery {
     // Add your Api key here //
     private static final String API_KEY = "";
-    
+
     private static final String LOG_TAG = DataQuery.class.getSimpleName();
     private static final String URI_BASE = "https://api.themoviedb.org/3/movie/";
     private static final String KEY_NAME = "api_key";
